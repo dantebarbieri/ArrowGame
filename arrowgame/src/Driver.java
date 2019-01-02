@@ -1,6 +1,5 @@
 package arrowgame.src;
 
-import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -8,6 +7,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 class Game extends JPanel {
+  private static final long serialVersionUID = 1L;
   int width, height;
   private Arrow a;
 
@@ -30,6 +30,7 @@ class Game extends JPanel {
 }
 
 public class Driver extends JFrame{
+  private static final long serialVersionUID = 1L;
   private static final int width = 900, height = 600;
 
   public Driver(){

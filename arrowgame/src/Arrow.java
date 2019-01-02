@@ -7,7 +7,6 @@ import javax.imageio.ImageIO;
 import java.io.File;
 import java.io.IOException;
 import java.lang.Math;
-import javax.swing.JPanel;
 
 public class Arrow{
   private Vector pos, vel; //pos === position of the tip
