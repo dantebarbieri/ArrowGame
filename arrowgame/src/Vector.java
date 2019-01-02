@@ -1,3 +1,5 @@
+package arrowgame.src;
+
 import java.lang.Math;
 
 public class Vector{

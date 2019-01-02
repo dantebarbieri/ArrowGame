@@ -1,3 +1,5 @@
+package arrowgame.src;
+
 import java.awt.geom.AffineTransform;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
@@ -50,7 +52,8 @@ public class Arrow{
     int[] loc = pos.toIntArray();
     trans.translate(loc[0], loc[1]);
     trans.rotate(vel.heading());
-    trans.scale(0.05, 0.05);
+    float scaleFactor = LEN / image.getHeight();
+    trans.scale(scaleFactor, scaleFactor);
     g2d.drawImage(image, trans, g);
     System.out.println("pos = " + pos);
     System.out.println("vel = " + vel);
